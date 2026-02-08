@@ -6,9 +6,10 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import MailIcon from '@mui/icons-material/Mail';
+import ListIcon from '@mui/icons-material/List';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import SettingsIcon from '@mui/icons-material/Settings';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import '../styles/Navbar.css';
 import logo from '../assets/logo.png';
 
@@ -28,11 +29,12 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
-  const menuItems = [
-    { text: 'Koti', icon: <HomeIcon /> },
-    { text: 'Tietoa', icon: <InfoIcon /> },
-    { text: 'Ota yhteyttä', icon: <MailIcon /> },
-  ];
+ const menuItems = [
+  { text: 'Avoimet tehtävät', icon: <ListIcon /> },
+  { text: 'Suoritetut tehtävät', icon: <CheckCircleOutlineIcon /> },
+  { text: 'Asetukset', icon: <SettingsIcon /> },
+  { text: 'Ohjeet', icon: <HelpOutlineIcon /> },
+];
 
   return (
     <AppBar position="sticky" className="navbar-container">
